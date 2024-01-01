@@ -4,4 +4,11 @@ text = """
 """
 
 # TODO
-
+#textのコンマとピリオドを削除する
+text = text.replace(",","").replace(".","")
+#空白で分割する
+text_list = text.split()
+#数える
+count = "".join(map(str,map(len, text_list)))
+answer = int(count)
+print(answer)
