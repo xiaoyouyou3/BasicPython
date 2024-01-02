@@ -1,9 +1,5 @@
-a = int(input("aの値を入力: "))
-b = int(input("bの値を入力: "))
-
 # TODO
-prime_numbers = [a,b]
-for number in prime_numbers:
+def prime_number(number):
     is_prime = True
     
     #1以下は素数ではない
@@ -16,7 +12,15 @@ for number in prime_numbers:
                 is_prime = False
                 break
     
-    if is_prime:
-        print(f"{number}は素数です")
-    else:
-        print(f"{number}は素数ではありません")
+    return is_prime
+
+while True:
+    try:
+        n = int(input("nの値を入力: "))
+        if n < 0:
+            raise ValueError("自然数を入力してください")
+        break
+    except ValueError as e:
+        print("自然数を入力してください")
+
+print(prime_number(n))

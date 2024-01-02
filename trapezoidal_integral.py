@@ -11,7 +11,7 @@ n = 100
 #各区間の幅
 h = (b - a) / n
 
-#計算
+    #計算
 answer = 0
 for i in range(1, n+1):
     answer += (h/2)*(sin(a+(i-1)*h) + sin(a+i*h))
