@@ -1,6 +1,0 @@
-matplotlib
-japanize-matplotlib
-pandas
-numpy
-scikit-learn
-seaborn
